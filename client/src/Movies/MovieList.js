@@ -22,10 +22,13 @@ const MovieList = props => {
   }, []);
   
   return (
-    <div className="movie-list">
+    <div className="movie-list"> 
       {movies.map(movie => ( 
         <Link to= {`/movie/${movie.id}`} >
-        <MovieDetails key={movie.id} movie={movie} /></Link>
+        <MovieDetails 
+        key={movie.id}
+         movie={movie} />
+         </Link>
       ))}
     </div> 
   );
